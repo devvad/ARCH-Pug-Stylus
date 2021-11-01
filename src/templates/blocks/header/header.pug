@@ -1,40 +1,16 @@
 mixin header()
-  +b.HEADER.header
-
-    +b.menu-nav
-      .container
-        +e.elem
-          +e.A(href='/').nav-item ARCH
-        +e.elem
-          +e.A(href='/').nav-item Главная
-        +e.elem
-          +e.A(href='/').nav-item Главная
-        +e.elem
-          +e.A(href='/').nav-item Главная
-        +e.elem
-          +e.A(href='/').nav-item Главная
-        +e.elem
-          +e.A(href='/').nav-item Главная
-
-    .container
-
-      +b.menu-button
-        +e.line
-        +e.line
-        +e.line
-                                
-      +b.logo
-        +e.text Фабрика скинвали №1
-        +e.description Ведущий производитель скинвали
-
-      +b.mobile-phone
-        +e.A(href="tel: +79121234567").link-phone +7 912 123-45-67
-        +e.small-text без выходных 9-21
-
-      +b.landline-phone
-        +e.A(href="tel: +79121234567").link-phone +7 912 123-45-67
-        +e.A(href="mailto: iform@mail.cu").small-text iform@mail.cu
-
-      +b.navbar-button
-        +e.button Получить консультацию
-
++b.header.header
+  +b.nav
+    +e.button.header__menu(type='submit')
+      img(src='../../../assets/images/header/menu.svg')
+  img.header__logo(src='./images/header/logo.svg' alt='Logo ARCH')
+  +b.nav.header__social-icons
+    +e.header__social-icon
+      a.header__icon(target='_blank' href='#')
+        img(src='../../../assets/images/header/facebook.svg' alt='Facebook')
+    +e.header__social-icon
+      a.header__icon(target='_blank' href='#')
+        img(src='../../../assets/images/header/twitter.svg' alt='Twitter')
+    +e.header__social-icon
+      a.header__icon(target='_blank' href='#')
+        img(src='../../../assets/images/header/instagram.svg' alt='Instagram')
