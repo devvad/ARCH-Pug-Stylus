@@ -1,0 +1,33 @@
+mixin blog()
+  section.blog
+    .blog__text
+      h3.blog__subtitle Blog Update
+        h2.blog__title News &amp; Articles
+    .blog__cards
+        .blog__card.blog__card_right
+          p.blog__card_num 30
+          p.blog__card_month October, 2021
+          h3.blog__card_subtitle Interior
+          h2.blog__card_title
+            | Anyhow, and that will
+            | be a rare experience
+        .blog__card.blog__card_right
+          p.blog__card_num 28
+          p.blog__card_month October, 2021
+          h3.blog__card_subtitle Interior
+          h2.blog__card_title
+            | Seems to me that a view
+            | of the heavenly
+        .blog__card.blog__card_right
+          p.blog__card_num 25
+          p.blog__card_month October, 2021
+          h3.blog__card_subtitle Interior
+          h2.blog__card_title
+            | As well as a tour round
+            | the world, should form
+        img.blog__shape(src='./images/general-shape.svg' alt='shape')
+    nav.blog__arrows
+        button.blog__arrow_back.blog__arrow_right(type='submit')
+        img(src='./images/service/back.svg' alt='back')
+        button.blog__arrow_forward(type='submit')
+        img(src='./images/service/forward.svg' alt='forward')
