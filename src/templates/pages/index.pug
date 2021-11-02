@@ -1,1 +1,6 @@
 extends ../layouts/main
+include ../blocks/achievements/achievements
+
+block content
+  +b.page--main 
+    +achievements()

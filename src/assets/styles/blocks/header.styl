@@ -6,34 +6,35 @@
     padding-bottom 64px
     background-color #F7F2E2
 
-.header__icon
-    margin auto
+    &__icon
+        margin auto
+    &__logo
+        width 133px
+        height 48px
+        margin-left 16px
+        +below(mobile-breakpoint)
+            width: 
 
-.header__logo
-    width 133px
-    height 48px
-    margin-left 16px
+    &__menu
+        height 48px
+        width 48px
+        border-radius 50%
+        background-color white
+        border none
 
-.header__menu
-    height 48px
-    width 48px
-    border-radius 50%
-    background-color white
-    border none
+    &__social-icon
+        display flex
+        height 48px
+        width 48px
+        border-radius 50%
+        background-color white
+        border none
+        margin-right 8px
+        &:last-child
+            margin-right 0
 
-.header__social-icon
-    display flex
-    height 48px
-    width 48px
-    border-radius 50%
-    background-color white
-    border none
-    margin-right 8px
-    &:last-child
+    &__social-icons
+        display flex
+        margin auto
         margin-right 0
-
-.header__social-icons
-    display flex
-    margin auto
-    margin-right 0
-    flex-direction row
+        flex-direction row
