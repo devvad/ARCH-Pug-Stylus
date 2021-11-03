@@ -1,0 +1,48 @@
+mixin service()
+  +b.SECTION.service
+    +e.wrap
+      +e.H2.subtitle Our Service
+      +e.H1.title
+        | Architectural
+        br
+        | Solutions
+    +e.cards
+      +e.card-one
+        +e.IMG.card(src='../../../assets/images/service/image1.png' alt='Windows')
+        +e.IMG.shape(src='../../../assets/images/service/shape.svg' alt='Shape')
+        div
+          +e.card_figcaption
+            +e.H2.card_title Architectural
+            +e.H3.card_subtitle
+              | Apparently we had reached a great
+              br
+              | height in the atmosphere, for the sky was
+              br
+              | a dead black, and the stars.
+      +e.card-two
+        +e.IMG.card(src='../../../assets/images/service/image2.png' alt='Graphics')
+        div
+          +e.card_figcaption
+            +e.H2.card_title Construction
+            +e.H3.card_subtitle
+              | Apparently we had reached a great
+              br
+              | height in the atmosphere, for the sky was
+              br
+              | a dead black, and the stars.
+      +e.card-three
+        +e.IMG.card(src='../../../assets/images/service/image3.png' alt='Washbowl')
+        div
+          +e.card_figcaption
+            +e.H2.card_title Interior
+            +e.H3.card_subtitle
+              | Apparently we had reached a great
+              br
+              | height in the atmosphere, for the sky was
+              br
+              | a dead black, and the stars.
+      +e.NAV.arrows
+        +e.button.arrow_back.arrow_right(type='submit')
+          IMG(src='../../../assets/images/service/back.svg' alt='back')
+        +e.button.arrow_forward(type='submit')
+          IMG(src='../../../assets/images/service/forward.svg' alt='forward')
