@@ -1,17 +1,17 @@
 mixin achievements()
-  section.achievements
-    +b.achievements__wrap
-      +e.h2.achievements__subtitle Achievements
-      +e.h1.achievements__title
+  +b.SECTION.achievements
+    +e.wrap
+      +e.H2.subtitle Achievements
+      +e.H1.title
         | Design, Followed By
         | Form &amp; Function
-    +b.div
-      +e.img.achievements__main-illustration(src='../../../assets/images/achievements/Achievements.png' alt='Achievement')
-      +b.achievements__text
-        +b.achievements__text-one
-          +e.img.achievements__text-one_num(src='../../../assets/images/achievements/42+.svg' alt='42+')
-          +e.img.achievements__text-one_str(src='../../../assets/images/achievements/Project-finished.svg' alt='Project finished')
-        .achievements__text-two
-          +e.img.achievements__text-one_num(src='../../../assets/images/achievements/730.svg' alt='730')
-          +e.img.achievements__text-one_str(src='../../../assets/images/achievements/Working-hours.svg' alt='Working-hours')
-      +b.img.achievements__shape(src='../../../assets/images/general-shape.svg' alt='shape')
+    div
+      +e.IMG.main-illustration(src='../../../assets/images/achievements/Achievements.png' alt='Achievement')
+      +e.text
+        +e.text-one
+          +e.IMG.text-one_num(src='../../../assets/images/achievements/42+.svg' alt='42+')
+          +e.IMG.text-one_str(src='../../../assets/images/achievements/Project-finished.svg' alt='Project finished')
+        +e.text-two
+          +e.IMG.text-one_num(src='../../../assets/images/achievements/730.svg' alt='730')
+          +e.IMG.text-one_str(src='../../../assets/images/achievements/Working-hours.svg' alt='Working-hours')
+      +e.IMG.shape(src='../../../assets/images/general-shape.svg' alt='shape')
