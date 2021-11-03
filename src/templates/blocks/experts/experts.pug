@@ -1,27 +1,29 @@
 mixin experts()
-    section.experts
-        .experts__text
-            h3.experts__subtitle Our Experts
-            h2.experts__title
-            | Meet our
-            | passionate
-            | crew
-            nav.experts__arrows
-            button.experts__arrow_back.experts__arrow_right(type='submit')
-                img(src='../../../assets/images/service/back.svg' alt='back')
-            button.experts__arrow_forward(type='submit')
-                img(src='../../../assets/images/service/forward.svg' alt='forward')
-        .experts__cards
-            div
-            img.experts__card.experts__card_right(src='./images/experts/Tamas.png' alt='Tamas Bunce')
-            img.experts__shape(src='../../../assets/images/experts/shape.svg' alt='shape')
-            div
-                .experts__card_figcaption
-                h2.experts__card_title Tamas Bunce
-                h3.experts__card_subtitle Architect Designer
-            div
-            img.experts__card(src='../../../assets/images/experts/Jafaris.png' alt='Jafaris Long')
-            div
-                .experts__card_figcaption
-                h2.experts__card_title Jafaris Long
-                h3.experts__card_subtitle Architect Designer
+  +b.SECTION.experts
+    +e.text
+      +e.H3.subtitle Our Experts
+      +e.H2.title
+        | Meet our
+        br
+        | passionate
+        br
+        | crew
+      nav.experts__arrows
+        button.experts__arrow_back.experts__arrow_right(type='submit')
+          img(src='./images/service/back.svg' alt='back')
+        button.experts__arrow_forward(type='submit')
+          img(src='./images/service/forward.svg' alt='forward')
+    .experts__cards
+      div
+        img.experts__card.experts__card_right(src='./images/experts/Tamas.png' alt='Tamas Bunce')
+        img.experts__shape(src='./images/experts/shape.svg' alt='shape')
+        div
+          .experts__card_figcaption
+            h2.experts__card_title Tamas Bunce
+            h3.experts__card_subtitle Architect Designer
+      div
+        img.experts__card(src='./images/experts/Jafaris.png' alt='Jafaris Long')
+        div
+          .experts__card_figcaption
+            h2.experts__card_title Jafaris Long
+            h3.experts__card_subtitle Architect Designer
