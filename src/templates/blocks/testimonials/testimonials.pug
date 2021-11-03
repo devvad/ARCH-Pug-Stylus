@@ -1,0 +1,28 @@
+mixin testimonials()
+  +b.SECTION.testimonials
+    +e.text
+      +e.H3.subtitle Testimonials
+      +e.H2.title
+        | What
+        br
+        | clients
+        br
+        | say
+      +e.NAV.arrows
+        +e.BUTTON.arrow_back.arrow_right(type='submit')
+          IMG(src='./images/service/back.svg' alt='back')
+        +e.BUTTON.arrow_forward(type='submit')
+          IMG(src='./images/service/forward.svg' alt='forward')
+    +e.cards
+      div
+        +e.IMG.card(src='./images/Testimonials.png' alt='Testimonials')
+        +e.IMG.shape(src='./images/general-shape.svg' alt='shape')
+      div
+        +e.card_figcaption
+          +e.card_commas(src='./images/commas.svg' alt='commas')
+          +e.P.card_paragraph
+            | &quot;As the minuteness of the parts formed a great hindrance to my speed, I resolved, contrary to my first intention, to make the being of a gigantic stature; that is to say, about eight feet in height, and proportionably large.
+            br
+            | After having formed this determination, and having spent some months in successfully collecting and arranging.&quot;
+          +e.H2.card_title Nuria Moura
+          +e.H3.card_subtitle Google
