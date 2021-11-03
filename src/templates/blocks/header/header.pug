@@ -1,10 +1,11 @@
 mixin header()
   +b.HEADER.header
-    +b.nav
-      +e.BUTTON.menu(type='submit')
+    +b.menu-wrapper
+      +e.BUTTON.button-menu(type='submit')
         +e.IMG(src='../../../assets/images/header/menu.svg')
-    +e.IMG.logo(src='/assets/images/header/logo.svg' alt='Logo ARCH')
-    +b.nav.social-icons
+    +b.logo-wrapper
+      +e.IMG.logo(src='/assets/images/header/logo.svg' alt='Logo ARCH')
+    +b.NAV.social-icons
       +e.social-icon
         +e.A.icon(target='_blank' href='#')
           +e.IMG(src='../../../assets/images/header/facebook.svg' alt='Facebook')
