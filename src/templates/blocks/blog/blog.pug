@@ -1,33 +1,33 @@
 mixin blog()
-  section.blog
-    .blog__text
-      h3.blog__subtitle Blog Update
-        h2.blog__title News &amp; Articles
-    .blog__cards
-        .blog__card.blog__card_right
-          p.blog__card_num 30
-          p.blog__card_month October, 2021
-          h3.blog__card_subtitle Interior
-          h2.blog__card_title
-            | Anyhow, and that will
-            | be a rare experience
-        .blog__card.blog__card_right
-          p.blog__card_num 28
-          p.blog__card_month October, 2021
-          h3.blog__card_subtitle Interior
-          h2.blog__card_title
-            | Seems to me that a view
-            | of the heavenly
-        .blog__card.blog__card_right
-          p.blog__card_num 25
-          p.blog__card_month October, 2021
-          h3.blog__card_subtitle Interior
-          h2.blog__card_title
-            | As well as a tour round
-            | the world, should form
-        img.blog__shape(src='../../../assets/images/general-shape.svg' alt='shape')
-    nav.blog__arrows
-        button.blog__arrow_back.blog__arrow_right(type='submit')
-        img(src='../../../assets/images/service/back.svg' alt='back')
-        button.blog__arrow_forward(type='submit')
-        img(src='../../../assets/images/service/forward.svg' alt='forward')
+  +e.SECTION.blog
+    +e.text
+      +e.H3.subtitle Blog Update
+      +e.H2.title News &amp; Articles
+    +e.cards
+      +e.card.card_right
+        +e.P.card_num 30
+        +e.P.card_month October, 2021
+        +e.H3.card_subtitle Interior
+        +e.H2.card_title
+          | Anyhow, and that will
+          | be a rare experience
+      +e.card.card_right
+        +e.P.card_num 28
+        +e.P.card_month October, 2021
+        +e.H3.card_subtitle Interior
+        +e.H2.card_title
+          | Seems to me that a view
+          | of the heavenly
+      +e.card.card_right
+        +e.P.card_num 25
+        +e.P.card_month October, 2021
+        +e.H3.card_subtitle Interior
+        +e.H2.card_title
+          | As well as a tour round
+          | the world, should form
+        +e.IMG.shape(src='../../../assets/images/general-shape.svg' alt='shape')
+    +e.NAV.arrows
+      +e.BUTTON.arrow_back.arrow_right(type='submit')
+        IMG(src='../../../assets/images/service/back.svg' alt='back')
+      +e.BUTTON.arrow_forward(type='submit')
+        IMG(src='../../../assets/images/service/forward.svg' alt='forward')
