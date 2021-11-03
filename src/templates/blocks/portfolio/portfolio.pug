@@ -1,0 +1,16 @@
+mixin portfolio()
+  +b.SECTION.portfolio
+    +e.H3.subtitle Our Portfolio
+    +e.H2.title Fascinating Projects
+    +e.images
+      div
+        +e.IMG.image-margins(src='../../../assets/images/portfolio/left-foto.png' alt='Beach House')
+      div
+        +e.IMG.image(src='../../../assets/images/portfolio/main-foto.png' alt='building')
+        +e.IMG.shape(src='../../../assets/images/portfolio/shape.svg' alt='shape')
+        +e.figcaption
+          +e.text
+            +e.H2.figcaption_title Beach House
+            +e.H3.igcaption_subtitle Interior Design
+      div
+        +e.IMG.image-margins(src='../../../assets/images/portfolio/right-foto.png' alt='building')
