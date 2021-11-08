@@ -1,14 +1,14 @@
 mixin numbers()
   +b.SECTION.numbers
-    div
-      +e.IMG.numbers__diagrams(src='../../../assets/images/numbers/42.png' alt='42%')
-      +e.H1.numbers__title Architectural
-    div
-      +e.IMG.numbers__diagrams(src='../../../assets/images/numbers/73.png' alt='73%')
-      +e.H1.numbers__title Construction
-    div
-      +e.IMG.numbers__diagrams(src='../../../assets/images/numbers/85.png' alt='85%')
-      +e.H1.numbers__title Interior
-    div
-      +e.IMG.numbers__diagrams(src='../../../assets/images/numbers/93.png' alt='93%')
-      +e.H1.numbers__title Architectural
+    +b.DIV.wrapper
+      +e.IMG.diagrams(src='../../../assets/images/numbers/42.png' alt='42%')
+      +e.H2.title Architectural
+    +b.DIV.wrapper
+      +e.IMG.diagrams(src='../../../assets/images/numbers/73.png' alt='73%')
+      +e.H2.title Construction
+    +b.DIV.wrapper
+      +e.IMG.diagrams(src='../../../assets/images/numbers/85.png' alt='85%')
+      +e.H2.title Interior
+    +b.DIV.wrapper
+      +e.IMG.diagrams.--end(src='../../../assets/images/numbers/93.png' alt='93%')
+      +e.H2.title Architectural
