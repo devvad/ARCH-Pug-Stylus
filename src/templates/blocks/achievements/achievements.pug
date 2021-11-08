@@ -4,14 +4,15 @@ mixin achievements()
       +e.H2.subtitle--title Achievements
       +e.H1.title
         | Design, Followed By
+        <br>
         | Form &amp; Function
     div
       +e.IMG.main-illustration(src='../../../assets/images/achievements/Achievements.png' alt='Achievement')
-      +e.text
-        +e.text-one
-          +e.IMG.text-one_num(src='../../../assets/images/achievements/42+.svg' alt='42+')
-          +e.IMG.text-one_str(src='../../../assets/images/achievements/Project-finished.svg' alt='Project finished')
-        +e.text-two
-          +e.IMG.text-one_num(src='../../../assets/images/achievements/730.svg' alt='730')
-          +e.IMG.text-one_str(src='../../../assets/images/achievements/Working-hours.svg' alt='Working-hours')
+      +b.text
+        +e.one
+          +e.IMG.--num(src='../../../assets/images/achievements/42+.svg' alt='42+')
+          +e.IMG.--str(src='../../../assets/images/achievements/Project-finished.svg' alt='Project finished')
+        +e.one
+          +e.IMG.--num(src='../../../assets/images/achievements/730.svg' alt='730')
+          +e.IMG.--str(src='../../../assets/images/achievements/Working-hours.svg' alt='Working-hours')
       +e.IMG.shape(src='../../../assets/images/general-shape.svg' alt='shape')

@@ -3,6 +3,22 @@
   padding 128px 135px 200px
   background-color #D49E31
 
+  &__subtitle
+    font-size 18px
+    line-height 32px
+    font-weight 700
+    margin 0
+    padding 0
+    padding-bottom 21px
+
+  &__title
+    font-size 72px
+    line-height 80px
+    font-weight 700
+    margin 0
+    padding 0
+    padding-bottom 33px
+
   &__main-illustration
     width 870px
     height 624px
@@ -32,40 +48,24 @@
     margin 0
     padding 0
 
-  &__text
-    position relative
-    z-index 2
+.text
+  position relative
+  z-index 2
+  display flex
+  flex-direction row
+  margin-left 48px
+  margin-top -180px
+
+  &__one
     display flex
-    flex-direction row
-    margin-left 48px
-    margin-top -180px
+    flex-direction column
+    margin-right 118px
 
-  &__subtitle
-    font-size 18px
-    line-height 32px
-    font-weight 700
-    margin 0
-    padding 0
-    padding-bottom 21px
+    &--num
+      width 134px
+      height 80px
+      margin-bottom 10px
 
-  &__title
-    font-size 72px
-    line-height 80px
-    font-weight 700
-    margin 0
-    padding 0
-    padding-bottom 33px
-
-  &__text-one
-        display flex
-        flex-direction column
-        margin-right 118px
-
-  &__text-one_num
-    width 134px
-    height 80px
-    padding-bottom 10px
-
-  &__text-one_str
-    width 144px
-    height 32px
+    &--str
+      width 144px
+      height 32px
