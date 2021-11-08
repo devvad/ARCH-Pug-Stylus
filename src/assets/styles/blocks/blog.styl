@@ -1,39 +1,58 @@
 .blog
   background-color #F7F2E2
   padding 74px 135px 80px
-
-  &__arrows
-    display flex
-    justify-content center
-    margin-top 48px
-
-  &__arrow_back
-    height 48px
-    width 48px
-    border-radius 100%
-    border none
-
-  &__arrow_forward
-    height 48px
-    width 48px
-    border-radius 100%
-    border none
-
-  &__arrow_right
-    margin-right 8px
+  position relative
 
   &__cards
     display flex
     flex-direction row
     justify-content center
+    
 
-  &__card
-    background-color #DD514C
-    width 370px
-    height 464px
-    border-radius 20px
+  &__shape
+    position absolute
+    z-index 0
+    width 176px
+    height 176px
+    right 67px
+    bottom 134px
+    margin 0
+    padding 0
 
-  &__card_month
+  &__subtitle
+    font-size 18px
+    line-height 32px
+    font-weight 700
+    padding 0
+    margin 0
+    margin-bottom 18px
+
+  &__text
+    flex-direction column
+    text-align center
+    justify-content center
+    align-items center
+
+  &__title
+    text-align center
+    font-size 56px
+    line-height 64px
+    font-weight 700
+    padding 0
+    margin 0
+    padding-bottom 52px
+
+.card
+  background-color #DD514C
+  width 370px
+  height 464px
+  border-radius 20px
+  z-index 1
+
+  &--right
+    margin-right 30px
+
+  &__month
     color white
     font-size 16px
     line-height 32px
@@ -41,7 +60,7 @@
     padding 0
     margin 0 234px 192px 32px
 
-  &__card_num
+  &__num
     color white
     font-size 72px
     line-height 80px
@@ -49,10 +68,7 @@
     padding 0
     margin 15px 243px 9px 32px
 
-  &__card_right
-    margin-right 30px
-
-  &__card_subtitle
+  &__subtitle
     font-size 16px
     line-height 32px
     font-weight 400
@@ -62,7 +78,7 @@
     margin 0 285px 13px 32px
     padding 0
 
-  &__card_title
+  &__title
     text-align left
     font-size 24px
     line-height 32px
@@ -71,37 +87,22 @@
     margin 0 32px 40px
     padding 0
 
-  &__shape
-      position absolute
-      z-index 1
-      width 176px
-      height 176px
-      left 1250px
-      top 5575px
-      object-position left top
-      object-fit cover
-      margin 0
-      padding 0
+.arrows
+  display flex
+  justify-content center
+  margin-top 48px
 
-  &__subtitle
-      font-size 18px
-      line-height 32px
-      font-weight 700
-      padding 0
-      margin 0
-      margin-bottom 18px
+  &__back
+    height 48px
+    width 48px
+    border-radius 100%
+    border none
 
-  &__text
-      flex-direction column
-      text-align center
-      justify-content center
-      align-items center
+    &--right
+      margin-right 8px
 
-  &__title
-      text-align center
-      font-size 56px
-      line-height 64px
-      font-weight 700
-      padding 0
-      margin 0
-      margin-bottom 52px
+  &__forward
+    height 48px
+    width 48px
+    border-radius 100%
+    border none
