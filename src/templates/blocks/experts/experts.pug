@@ -8,22 +8,22 @@ mixin experts()
         | passionate
         br
         | crew
-      +e.nav.arrows
-        +e.button.arrow_back.arrow_right(type='submit')
+      +b.NAV.arrows--left
+        +e.BUTTON.back.--right(type='submit')
           IMG(src='../../../assets/images/service/back.svg' alt='back')
-        +e.button.arrow_forward(type='submit')
+        +e.BUTTON.forward(type='submit')
           IMG(src='../../../assets/images/service/forward.svg' alt='forward')
     +e.cards
-      div
-        +e.IMG.card.card_right(src='../../../assets/images/experts/Tamas.png' alt='Tamas Bunce')
-        +e.IMG.shape(src='../../../assets/images/experts/shape.svg' alt='shape')
+      +b.ex-card.--right
+        +e.IMG(src='../../../assets/images/experts/Tamas.png' alt='Tamas Bunce')
         div
-          +e.card_figcaption
-            +e.H2.card_title Tamas Bunce
-            +e.H3.card_subtitle Architect Designer
-      div
-        +e.IMG.card(src='../../../assets/images/experts/Jafaris.png' alt='Jafaris Long')
+          +e.figcaption
+            +e.H2.title Tamas Bunce
+            +e.H3.subtitle Architect Designer
+      +b.ex-card
+        +e.IMG(src='../../../assets/images/experts/Jafaris.png' alt='Jafaris Long')
         div
-          +e.card_figcaption
-            +e.H2.card_title Jafaris Long
-            +e.H3.card_subtitle Architect Designer
+          +e.figcaption.--right
+            +e.H2.title Jafaris Long
+            +e.H3.subtitle Architect Designer
+    +e.IMG.shape(src='../../../assets/images/experts/shape.svg' alt='shape')
